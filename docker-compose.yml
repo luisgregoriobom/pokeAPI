@@ -1,0 +1,29 @@
+version: '3'
+services:
+  flask:
+    image: trainer_image
+    ports:
+      - 5001:5001
+    environment:
+      - DATABASE_URL=postgresql://username:userpass@db:5432/testdb
+    depends_on:
+      - db_pg
+  
+  db_pg:
+    container_name: db
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5423
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: userpass
+      POSTGRES_DB: testdb
+      
+  adminer:
+    image: adminer
+    restart: always
+    depends_on:
+      - db_pg
+    ports:
+      - 8080:8080
