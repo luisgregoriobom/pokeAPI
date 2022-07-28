@@ -66,13 +66,13 @@ $ cd ..
 $ docker-compose -f docker-compose-dev.yml up -d
 ```
 
-Agora acessamos a pasta do diretorio PokeAPI:
+Agora acessamos a pasta do diretorio trainerapp:
 
 ```
-$ cd PokeAPI
+$ cd trainerapp
 ``` 
 <p>
-Para instalar as dependências necessárias do projeto, rode o comando no seu terminal, dentro da pasta raiz do projeto:
+Para instalar as dependências necessárias do projeto, rode o comando no seu terminal:
  
 ```
 $ pip install -r requirements.txt
@@ -85,8 +85,16 @@ Feito isso, rodar o comando
 $ flask run
 ```
 
+Com isso, seu endereço vai estar disponivel para acesso: 
+ 
+<p> 
+ 
+```
+127.0.0.1:5000/trainer
+```
+ 
 # Endpoints
-Para testar as requisições, utilize o endereço: 
+Para testar as requisições, pode utilizar tanto o endereço acima, quanto este outro: 
 <p>
 http://ec2-34-203-236-97.compute-1.amazonaws.com:5001/
 
