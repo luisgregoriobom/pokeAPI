@@ -13,6 +13,8 @@ services:
     container_name: db
     image: postgres
     restart: always
+    volumes:
+      - ./database-init.sql:/docker-entrypoint-initdb.d/db.sql
     ports:
       - 5433:5432
     environment:
