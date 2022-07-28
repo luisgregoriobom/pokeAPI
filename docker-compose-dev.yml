@@ -1,13 +1,13 @@
-version: '3.2'
+version: '3'
 services:
-  flask:
-    image: trainer_image
-    ports:
-      - 5001:5001
-    environment:
-      - DATABASE_URL=postgresql://username:userpass@db:5433/pokemon
-    depends_on:
-      - db_pg
+  # flask:
+  #   image: trainer_image
+  #   ports:
+  #     - 5001:5001
+  #   environment:
+  #     - DATABASE_URL=postgresql://username:userpass@db:5432/pokemon
+  #   depends_on:
+  #     - db_pg
   
   db_pg:
     container_name: db
