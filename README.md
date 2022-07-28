@@ -30,12 +30,10 @@ Esse simples comando instala o subsistema e também o Ubuntu como distribuição
 
 <p>
 
-Com esse comando 
+Com esse comando você pode atualizar o kernel. O Ubuntu aparecerá após a reinicialização.
 ```
 $ wsl --update
 ``` 
-você pode atualizar o kernel. O Ubuntu aparecerá após a reinicialização.
-
 <p>
  
 Clonar repositório:
