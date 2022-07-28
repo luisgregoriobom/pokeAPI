@@ -60,6 +60,9 @@ $ export DATABASE_URL="postgresql://username:userpass@localhost:5433/pokemon"
 $ docker build -t trainer_image .
 ```
 ```
+$ cd ..
+```
+```
 $ docker-compose -f docker-compose-dev.yml up -d.
 ```
 
