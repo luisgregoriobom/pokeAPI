@@ -62,15 +62,14 @@ $ docker-compose -f docker-compose-dev.yml up -d.
 $ export DATABASE_URL="postgresql://username:userpass@localhost:5433/pokemon"
 ```
 
-Para instalar as dependências necessárias do projeto, rode o comando no seu terminal, dentro da pasta raiz do projeto:
-
 Agora acessamos a pasta do diretorio PokeAPI:
  
 ```
 $ cd PokeAPI
 ``` 
 <p>
-
+Para instalar as dependências necessárias do projeto, rode o comando no seu terminal, dentro da pasta raiz do projeto:
+ 
 ```
 $ pip install -r requirements.txt
 ``` 
