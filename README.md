@@ -38,7 +38,7 @@ você pode atualizar o kernel. O Ubuntu aparecerá após a reinicialização.
 
 <p>
  
- clonar repositório:
+Clonar repositório:
 ```
 $ git clone https://github.com/luisgregoriobom/pokeAPI.git
 ```
@@ -51,13 +51,13 @@ $ cd PokeAPI
 ``` 
 <p>
  
-Agora instalaremos o postgreSQL
+E na sequencia instalaremos o postgreSQL
  
 ```
 $ sudo apt-get install postgresql
 ``` 
 <p> 
-Abrir o docker e rodar os seguintes comandos no seu terminal:
+Abrir o docker e rodar os seguintes comandos no seu terminal wsl:
  
 ```
 $ docker build -t trainer_image .
@@ -76,7 +76,7 @@ $ pip install -r requirements.txt
 ``` 
 <p>
  
-Feito isso, entrar na pasta do repositorio e digitar
+Feito isso, rodar o comando
  
 ```
 $ flask run
