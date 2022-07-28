@@ -48,7 +48,7 @@ E na sequencia instalaremos o postgreSQL
 $ sudo apt-get install postgresql
 ``` 
 <p> 
-Abrir o docker e rodar os seguintes comandos no seu terminal wsl:
+Abrir o docker e rodar os seguintes comandos no seu terminal:
  
 ```
 $ cd trainerapp
@@ -63,7 +63,7 @@ $ docker build -t trainer_image .
 $ cd ..
 ```
 ```
-$ docker-compose -f docker-compose-dev.yml up -d.
+$ docker-compose -f docker-compose-dev.yml up -d
 ```
 
 Agora acessamos a pasta do diretorio PokeAPI:
